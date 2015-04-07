@@ -17,9 +17,9 @@ RUN apt-get -y install oracle-java7-installer && apt-get clean
 RUN update-java-alternatives -s java-7-oracle
 RUN echo "export JAVA_HOME=/usr/lib/jvm/java-7-oracle" >> ~/.bashrc
 
-ENV SOLR solr-4.10.2
+ENV SOLR solr-4.10.4
 WORKDIR /opt
-RUN wget http://apache.fastbull.org/lucene/solr/4.10.2/$SOLR.tgz -O /opt/$SOLR.tgz
+RUN wget http://apache.fastbull.org/lucene/solr/4.10.4/$SOLR.tgz -O /opt/$SOLR.tgz
 
 
 RUN ls -lah /opt
