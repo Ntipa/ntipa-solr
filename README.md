@@ -1,0 +1,2 @@
+# ntipa-solr
+ntipa-solr
