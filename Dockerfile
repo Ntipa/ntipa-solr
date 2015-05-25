@@ -19,8 +19,7 @@ RUN echo "export JAVA_HOME=/usr/lib/jvm/java-7-oracle" >> ~/.bashrc
 
 ENV SOLR solr-4.10.4
 WORKDIR /opt
-RUN wget http://apache.fastbull.org/lucene/solr/4.10.4/$SOLR.tgz -O /opt/$SOLR.tgz
-
+RUN wget http://it.apache.contactlab.it/lucene/solr/4.10.4/solr-4.10.4.tgz  -O /opt/$SOLR.tgz
 
 RUN ls -lah /opt
 RUN tar -C /opt --extract --file /opt/$SOLR.tgz
